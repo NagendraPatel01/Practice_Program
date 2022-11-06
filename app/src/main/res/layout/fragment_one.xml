@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".OneFragment"
+    android:background="#C51212">
+
+    <androidx.cardview.widget.CardView
+        android:layout_margin="20dp"
+        app:cardCornerRadius="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="40dp">
+
+        <EditText
+            android:id="@+id/bootm"
+            android:hint="Name"
+            android:paddingHorizontal="20dp"
+            android:textColorHint="#000"
+            android:focusableInTouchMode="false"
+            android:drawableRight="@drawable/active_dot"
+            android:layout_marginHorizontal="20dp"
+            android:background="@null"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        </EditText>
+    </androidx.cardview.widget.CardView>
+
+
+
+
+</LinearLayout>
