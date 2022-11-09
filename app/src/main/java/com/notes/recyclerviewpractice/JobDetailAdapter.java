@@ -21,7 +21,7 @@ public class JobDetailAdapter extends FragmentStateAdapter {
             return new OneFragment();
         }
 
-        return new OneFragment();
+        return new twoFragment();
     }
 
     @Override

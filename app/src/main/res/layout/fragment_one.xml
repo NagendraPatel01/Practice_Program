@@ -3,9 +3,21 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     tools:context=".OneFragment"
     android:background="#C51212">
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+   <LinearLayout
+       android:orientation="vertical"
+       android:layout_width="match_parent"
+       android:layout_height="match_parent">
+
+
 
     <androidx.cardview.widget.CardView
         android:layout_margin="20dp"
@@ -27,6 +39,208 @@
 
         </EditText>
     </androidx.cardview.widget.CardView>
+    <androidx.cardview.widget.CardView
+        android:layout_margin="20dp"
+        app:cardCornerRadius="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="40dp">
+
+        <EditText
+            android:hint="Name"
+            android:paddingHorizontal="20dp"
+            android:textColorHint="#000"
+            android:focusableInTouchMode="false"
+            android:drawableRight="@drawable/active_dot"
+            android:layout_marginHorizontal="20dp"
+            android:background="@null"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        </EditText>
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:layout_margin="20dp"
+        app:cardCornerRadius="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="40dp">
+
+        <EditText
+            android:hint="Name"
+            android:paddingHorizontal="20dp"
+            android:textColorHint="#000"
+            android:focusableInTouchMode="false"
+            android:drawableRight="@drawable/active_dot"
+            android:layout_marginHorizontal="20dp"
+            android:background="@null"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        </EditText>
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:layout_margin="20dp"
+        app:cardCornerRadius="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="40dp">
+
+        <EditText
+            android:hint="Name"
+            android:paddingHorizontal="20dp"
+            android:textColorHint="#000"
+            android:focusableInTouchMode="false"
+            android:drawableRight="@drawable/active_dot"
+            android:layout_marginHorizontal="20dp"
+            android:background="@null"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        </EditText>
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:layout_margin="20dp"
+        app:cardCornerRadius="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="40dp">
+
+        <EditText
+            android:hint="Name"
+            android:paddingHorizontal="20dp"
+            android:textColorHint="#000"
+            android:focusableInTouchMode="false"
+            android:drawableRight="@drawable/active_dot"
+            android:layout_marginHorizontal="20dp"
+            android:background="@null"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        </EditText>
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:layout_margin="20dp"
+        app:cardCornerRadius="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="40dp">
+
+        <EditText
+            android:hint="Name"
+            android:paddingHorizontal="20dp"
+            android:textColorHint="#000"
+            android:focusableInTouchMode="false"
+            android:drawableRight="@drawable/active_dot"
+            android:layout_marginHorizontal="20dp"
+            android:background="@null"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        </EditText>
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:layout_margin="20dp"
+        app:cardCornerRadius="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="40dp">
+
+        <EditText
+            android:hint="Name"
+            android:paddingHorizontal="20dp"
+            android:textColorHint="#000"
+            android:focusableInTouchMode="false"
+            android:drawableRight="@drawable/active_dot"
+            android:layout_marginHorizontal="20dp"
+            android:background="@null"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        </EditText>
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:layout_margin="20dp"
+        app:cardCornerRadius="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="40dp">
+
+        <EditText
+            android:hint="Name"
+            android:paddingHorizontal="20dp"
+            android:textColorHint="#000"
+            android:focusableInTouchMode="false"
+            android:drawableRight="@drawable/active_dot"
+            android:layout_marginHorizontal="20dp"
+            android:background="@null"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        </EditText>
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:layout_margin="20dp"
+        app:cardCornerRadius="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="40dp">
+
+        <EditText
+            android:hint="Name"
+            android:paddingHorizontal="20dp"
+            android:textColorHint="#000"
+            android:focusableInTouchMode="false"
+            android:drawableRight="@drawable/active_dot"
+            android:layout_marginHorizontal="20dp"
+            android:background="@null"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        </EditText>
+    </androidx.cardview.widget.CardView>
+    <androidx.cardview.widget.CardView
+    android:layout_margin="20dp"
+    app:cardCornerRadius="20dp"
+    android:layout_width="match_parent"
+    android:layout_height="40dp">
+
+    <EditText
+        android:hint="Name"
+        android:paddingHorizontal="20dp"
+        android:textColorHint="#000"
+        android:focusableInTouchMode="false"
+        android:drawableRight="@drawable/active_dot"
+        android:layout_marginHorizontal="20dp"
+        android:background="@null"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    </EditText>
+</androidx.cardview.widget.CardView>
+    <androidx.cardview.widget.CardView
+    android:layout_margin="20dp"
+    app:cardCornerRadius="20dp"
+    android:layout_width="match_parent"
+    android:layout_height="40dp">
+
+    <EditText
+        android:hint="Name"
+        android:paddingHorizontal="20dp"
+        android:textColorHint="#000"
+        android:focusableInTouchMode="false"
+        android:drawableRight="@drawable/active_dot"
+        android:layout_marginHorizontal="20dp"
+        android:background="@null"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    </EditText>
+</androidx.cardview.widget.CardView>
+
+   </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+
+
 
 
 
