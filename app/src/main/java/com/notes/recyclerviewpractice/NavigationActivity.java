@@ -20,8 +20,8 @@ import com.google.android.material.navigation.NavigationView;
 
 public class NavigationActivity extends AppCompatActivity {
 
-    DrawerLayout drawer;
-    FrameLayout frame;
+   public static  DrawerLayout drawer;
+    public  static FrameLayout frame;
     NavigationView navigation;
     ImageView img;
     TextView text;
@@ -38,6 +38,7 @@ public class NavigationActivity extends AppCompatActivity {
         text=findViewById(R.id.text);
 
         TextView textView = navigation.findViewById(R.id.text);
+        TextView text1 = navigation.findViewById(R.id.text1);
 
         textView.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -47,6 +48,16 @@ public class NavigationActivity extends AppCompatActivity {
             }
         });
 
+
+        text1.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                drawer.closeDrawer(GravityCompat.START);
+                replace(new twoFragment());
+            }
+        });
+
+
         img.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -55,22 +66,22 @@ public class NavigationActivity extends AppCompatActivity {
             }
         });
 
-        navigation.setNavigationItemSelectedListener(new NavigationView.OnNavigationItemSelectedListener() {
-            @Override
-            public boolean onNavigationItemSelected(@NonNull MenuItem item) {
-
-                switch (item.getItemId()){
-
-                    case R.id.text:
-                        replace(new OneFragment());
-                        break;
-                }
-
-
-                drawer.closeDrawer(GravityCompat.START);
-                return true;
-            }
-        });
+//        navigation.setNavigationItemSelectedListener(new NavigationView.OnNavigationItemSelectedListener() {
+//            @Override
+//            public boolean onNavigationItemSelected(@NonNull MenuItem item) {
+//
+//                switch (item.getItemId()){
+//
+//                    case R.id.text:
+//                        replace(new OneFragment());
+//                        break;
+//                }
+//
+//
+//                drawer.closeDrawer(GravityCompat.START);
+//                return true;
+//            }
+//        });
     }
 
     void replace(Fragment fragment) {
