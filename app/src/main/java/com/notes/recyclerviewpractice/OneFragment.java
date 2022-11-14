@@ -1,7 +1,9 @@
 package com.notes.recyclerviewpractice;
 
+import android.content.Intent;
 import android.os.Bundle;
 
+import androidx.activity.OnBackPressedCallback;
 import androidx.core.view.GravityCompat;
 import androidx.fragment.app.Fragment;
 
@@ -50,6 +52,15 @@ public class OneFragment extends Fragment {
 
             }
         });
+
+        OnBackPressedCallback callback = new OnBackPressedCallback(true) {
+            @Override
+            public void handleOnBackPressed() {
+                Intent intent = new Intent(getContext(),NavigationActivity.class);
+                startActivity(intent);
+            }
+        };
+        requireActivity().getOnBackPressedDispatcher().addCallback(getViewLifecycleOwner(),callback);
 
         return view;
 

@@ -93,14 +93,9 @@ public class NavigationActivity extends AppCompatActivity {
 
     @Override
     public void onBackPressed() {
-        DrawerLayout layout = (DrawerLayout)findViewById(R.id.drawer);
-        if (layout.isDrawerOpen(GravityCompat.START)) {
-            layout.closeDrawer(GravityCompat.START);
-        } else {
+
             super.onBackPressed();
             finish();
         }
-    }
-
 
 }
