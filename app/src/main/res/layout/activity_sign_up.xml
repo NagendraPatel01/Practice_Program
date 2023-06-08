@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".SignUpActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_marginHorizontal="20dp"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <androidx.cardview.widget.CardView
+                android:layout_marginTop="20dp"
+                android:layout_gravity="center"
+                app:cardCornerRadius="50dp"
+                android:layout_width="100dp"
+                android:layout_height="100dp">
+
+                <ImageView
+                    android:layout_gravity="center"
+                    android:src="@drawable/profile"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp">
+
+                </ImageView>
+
+
+            </androidx.cardview.widget.CardView>
+
+
+            <EditText
+                android:id="@+id/name"
+                android:hint="Enter name"
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+            </EditText>
+
+            <EditText
+                android:id="@+id/mobile"
+                android:hint="Enter mobile"
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+            </EditText>
+
+            <EditText
+                android:id="@+id/email"
+                android:hint="Enter email"
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+            </EditText>
+
+            <EditText
+                android:id="@+id/address"
+                android:hint="Enter address"
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+            </EditText>
+
+            <EditText
+                android:id="@+id/pincode"
+                android:hint="Enter pincode"
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+            </EditText>
+
+            <EditText
+                android:id="@+id/govid"
+                android:hint="Enter govid"
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+            </EditText>
+
+            <EditText
+                android:id="@+id/driving"
+                android:hint="Enter drivinig licines"
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+            </EditText>
+
+            <EditText
+                android:id="@+id/password"
+                android:hint="Enter password"
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+            </EditText>
+            <EditText
+                android:id="@+id/lat"
+                android:hint="Enter lat"
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+            </EditText>
+            <EditText
+                android:id="@+id/lng"
+                android:hint="Enter lng"
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+            </EditText>
+
+            <EditText
+                android:id="@+id/fcmid"
+                android:hint="Enter fcmid"
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+            </EditText>
+
+            <EditText
+                android:id="@+id/status"
+                android:hint="Enter status"
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+            </EditText>
+
+            <EditText
+                android:id="@+id/deliveryfee"
+                android:hint="Enter delivey fee"
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+            </EditText>
+
+
+            <Button
+                android:id="@+id/btn"
+                android:textColor="#fff"
+                android:text="Ragistratin"
+                android:layout_marginTop="10dp"
+                android:layout_gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+            </Button>
+
+
+            <Button
+                android:layout_marginBottom="20dp"
+                android:id="@+id/btnone"
+                android:textColor="#fff"
+                android:text="Login"
+                android:layout_marginTop="10dp"
+                android:layout_gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+            </Button>
+
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+
+
+
+</LinearLayout>
