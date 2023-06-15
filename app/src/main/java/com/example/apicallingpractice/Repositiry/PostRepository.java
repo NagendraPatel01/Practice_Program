@@ -19,6 +19,7 @@ public class PostRepository {
         myInterFace= RetrofitClientmvvm.getRetrofit().create(MyInterFace.class);
     }
 
+
     public LiveData<List<AllpostsModel>> getpost(){
 
 
