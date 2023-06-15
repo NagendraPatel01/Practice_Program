@@ -6,8 +6,12 @@ import androidx.lifecycle.ViewModelProvider;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
+import android.annotation.SuppressLint;
+import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
+import android.view.View;
+import android.widget.Button;
 
 import com.example.apicallingpractice.Adapter.EntriesAdapter;
 import com.example.apicallingpractice.Viewmodels.EntriesViewModel;
@@ -26,15 +30,25 @@ import retrofit2.Response;
 public class MainActivity extends AppCompatActivity {
 
     RecyclerView recycle;
+    Button next;
     EntriesViewModel entriesViewModel;
 
 
+    @SuppressLint("MissingInflatedId")
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
         recycle=findViewById(R.id.recycle);
+        next=findViewById(R.id.next);
+
+        next.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(MainActivity.this,AllPostActivity.class));
+            }
+        });
 
         RetrofitClientone.getRetrofit().create(MyInterFace.class)
                 .getdataone("1","jonney","jorden","2349875675").enqueue(new Callback<myone>() {

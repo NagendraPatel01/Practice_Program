@@ -5,22 +5,18 @@ import androidx.lifecycle.Observer;
 import androidx.lifecycle.ViewModelProvider;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
-
 import android.annotation.SuppressLint;
 import android.os.Bundle;
-
+import android.widget.TextView;
 import com.example.apicallingpractice.Adapter.AllpostAdapter;
 import com.example.apicallingpractice.Viewmodels.PostViewModel;
 import com.example.apicallingpractice.model.AllpostsModel;
-
 import java.util.List;
-
 public class AllPostActivity extends AppCompatActivity {
 
     RecyclerView recyclerview;
     PostViewModel postViewModel;
     AllpostAdapter adapter;
-
     @SuppressLint("MissingInflatedId")
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -31,11 +27,9 @@ public class AllPostActivity extends AppCompatActivity {
 
         LinearLayoutManager linearLayoutManager = new LinearLayoutManager(AllPostActivity.this,RecyclerView.VERTICAL,false);
         recyclerview.setLayoutManager(linearLayoutManager);
-
-
+        linearLayoutManager.setReverseLayout(true);
 
         postViewModel = new ViewModelProvider(this).get(PostViewModel.class);
-
         postViewModel.getPostsLiveData().observe(this, new Observer<List<AllpostsModel>>() {
             @Override
             public void onChanged(List<AllpostsModel> allpostsModels) {
@@ -45,8 +39,5 @@ public class AllPostActivity extends AppCompatActivity {
                 adapter.notifyDataSetChanged();
             }
         });
-
-
-
     }
 }

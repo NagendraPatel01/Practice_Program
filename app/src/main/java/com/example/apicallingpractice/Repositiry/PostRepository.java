@@ -1,16 +1,12 @@
 package com.example.apicallingpractice.Repositiry;
 
 import android.util.Log;
-
 import androidx.lifecycle.LiveData;
 import androidx.lifecycle.MutableLiveData;
-
 import com.example.apicallingpractice.model.AllpostsModel;
 import com.example.apicallingpractice.networking.MyInterFace;
 import com.example.apicallingpractice.networking.RetrofitClientmvvm;
-
 import java.util.List;
-
 import retrofit2.Call;
 import retrofit2.Callback;
 import retrofit2.Response;
