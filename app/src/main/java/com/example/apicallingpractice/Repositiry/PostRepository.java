@@ -21,6 +21,7 @@ public class PostRepository {
 
     public LiveData<List<AllpostsModel>> getpost(){
 
+
         MutableLiveData<List<AllpostsModel>> mutableLiveData=new MutableLiveData<>();
         Call<List<AllpostsModel>> call = myInterFace.Allpost();
 
